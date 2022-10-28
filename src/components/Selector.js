@@ -1,6 +1,6 @@
 export default function Selector(props) {
   return (
-    <div>
+    <div className="selector-container">
       <select onChange={(e) => props.setCountry(e.target.value)}>
         <option>Select a Country.</option>
         {props.countriesJson.map((Country, index) =>
